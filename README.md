@@ -21,4 +21,4 @@
 | Nicoly Gabriele da Silva                | 01864943  |   |
 | Rian Pedro Alves de Farias              | 01850177  |  |
 | Sellena de Assis Ribeiro Lima           | 01862534  |  |
-| Vinicius          |   |  |
+| Vinicius          |   |  |              | 01796490 |  |
