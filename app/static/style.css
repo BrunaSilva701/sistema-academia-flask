@@ -229,6 +229,67 @@ text-decoration: none;
 }
 
 /* Page Specifics: Perfil */
+/* Login e cadastro */
+body:has(.page-auth) {
+    --primary: #0865bb;
+    --primary-hover: #064e93;
+    background: #102438;
+}
+
+body:has(.page-auth) .navbar,
+body:has(.page-auth) .footer {
+    background: #081d33;
+    color: #dce9f6;
+    border: 0;
+}
+
+body:has(.page-auth) :is(.brand, .nav-links a) {
+    color: #f4f8fc;
+}
+
+.container:has(.page-auth) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: clamp(1.25rem, 5vw, 4rem) 1rem;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(110deg, rgba(4, 19, 36, .78), rgba(9, 34, 55, .55)),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80") center / cover;
+}
+
+.container:has(.page-auth) .flash-messages {
+    width: min(100%, 26rem);
+    margin: 0 auto 1rem;
+}
+
+.page-auth { flex: 1; padding: 0; }
+.page-auth .form-card {
+    max-width: 26rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    border-radius: 16px;
+    box-shadow: 0 18px 50px rgba(0, 10, 26, .28);
+}
+.page-auth h1 {
+    text-align: center;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    letter-spacing: -.04em;
+    color: #112943;
+}
+.page-auth .auth-intro {
+    margin: .5rem 0 1.75rem;
+    text-align: center;
+    color: #475569;
+}
+.page-auth input { min-height: 46px; background: #f8fafc; font-size: 1rem; }
+.page-auth .btn { min-height: 46px; font-size: 1rem; }
+.page-auth .auth-footer a { font-weight: 650; text-decoration: underline; }
+body:has(.page-auth) :focus-visible { outline: 3px solid #4799dc; outline-offset: 2px; }
+@media (max-width: 440px) {
+    body:has(.page-auth) .nav-container { flex-wrap: wrap; gap: .75rem; padding: 0 1rem; }
+    body:has(.page-auth) .nav-links { flex-wrap: wrap; gap: .75rem; }
+}
+
 .page-perfil {
 display: flex;
 justify-content: center;
